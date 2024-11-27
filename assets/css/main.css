@@ -2173,13 +2173,13 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #f7f7f7 url("../../images/Portfolio\ -\ Banner.png");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: 1200px 444px;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 8em 0;
+		padding: 13.5em 0;
 		margin: 4em 0 0 0;
 	}
 
