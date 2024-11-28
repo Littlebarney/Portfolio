@@ -152,8 +152,8 @@ input, select, textarea {
 	}
 
 	a {
-		color: #d52349;
-		text-decoration: underline;
+		color: #252122;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -1935,9 +1935,19 @@ input, select, textarea {
 						background: #4c6aa8;
 					}
 
-				ul.social li a.fa-twitter {
-					background: #2daae4;
-				}
+					ul.social li a.fa-blueksky{
+						display: inline-block;
+						padding: 5px;
+						background: #0057ff; /* Bluesky's color */
+						border-radius: 50%;
+					}
+					
+					ul.social li a img {
+						width: 40px; /* Logo size */
+						height: 40px;
+						border-radius: 50%;
+					}
+					
 
 					ul.social li a.fa-twitter:hover {
 						background: #3dbaf4;
