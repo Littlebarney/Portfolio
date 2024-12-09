@@ -29,8 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
+	
 body {
 	line-height: 1;
+	background-color: transparent;
 }
 
 ol, ul {
@@ -2070,6 +2074,7 @@ input, select, textarea {
 
 	#page-wrapper > section {
 		margin-bottom: 0;
+		
 	}
 
 /* Header */
