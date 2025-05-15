@@ -34,7 +34,6 @@ footer, header, hgroup, menu, nav, section {
 	
 body {
 	line-height: 1;
-	background-color: transparent;
 }
 
 ol, ul {
@@ -226,6 +225,11 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		margin-left: 0;
+  		margin-right: 0;
+  		padding-left: 0;
+  		padding-right: 0;
+		row-gap: 2em;
 	}
 
 		.row > * {
@@ -263,6 +267,7 @@ input, select, textarea {
 		.row > .imp {
 			order: -1;
 		}
+		
 
 		.row > .col-1 {
 			width: 8.33333%;
@@ -289,9 +294,12 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
-		}
-
+			width: 33.3333%;
+			padding-left: 1em;
+			padding-right: 1em;
+			box-sizing: border-box;
+		  }
+		  
 		.row > .off-4 {
 			margin-left: 33.33333%;
 		}
@@ -411,22 +419,7 @@ input, select, textarea {
 					padding-top: 25px;
 				}
 
-		.row {
-			margin-top: -50px;
-			margin-left: -50px;
-		}
-
-			.row > * {
-				padding: 50px 0 0 50px;
-			}
-
-			.row.gtr-uniform {
-				margin-top: -50px;
-			}
-
-				.row.gtr-uniform > * {
-					padding-top: 50px;
-				}
+	
 
 		.row.gtr-150 {
 			margin-top: -75px;
@@ -1456,6 +1449,7 @@ input, select, textarea {
 	form input[type=password],
 	form select,
 	form textarea {
+		appearance: none;
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
@@ -1572,18 +1566,49 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
-		background: #ffffff;
-		border-bottom: solid 1px #ccc;
-		padding: 2.75em 1.75em 2.75em 1.75em;
-	}
-
-		.box .image.featured {
-			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
+/* Box container */
+.box {
+	background: #ffffff;
+	border-bottom: 1px solid #ccc;
+	padding: 2em 1.5em;   /* balanced padding */
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+  }
+  
+  /* Featured image inside the box */
+  .box .image.featured {
+	position: relative;
+	display: block;
+	width: 100%;          /* full width */
+	margin-bottom: 1.5em; /* spacing below the image */
+	left: 0;
+	margin-left: 0;
+	top: 0;
+  }
+  
+  /* Header spacing inside box */
+  .box header {
+	margin-bottom: 1em;
+  }
+  
+  /* Footer actions */
+  .box footer ul.actions {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  /* Make sure the box content grows to fill height */
+  .box > * {
+	flex-shrink: 0;
+	transition: transform 0.2s ease, box-shadow 0.2s;
+  }
+  
+  		.box:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 		}
 
 		.box.post header {
@@ -1612,6 +1637,7 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
+		appearance: none;
 		-webkit-appearance: none;
 		display: inline-block;
 		text-decoration: none;
