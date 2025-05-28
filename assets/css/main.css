@@ -322,6 +322,8 @@ input, select, textarea {
 			padding-left: 1em;
 			padding-right: 1em;
 			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
 		  }
 		  
 		.row > .off-4 {
@@ -1604,6 +1606,7 @@ input, select, textarea {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 	height: 100%;
   }
   
@@ -1658,6 +1661,10 @@ input, select, textarea {
 
 		.box footer ul.actions {
 			margin-bottom: 0;
+		}
+
+		.box p {
+			flex-grow: 1;
 		}
 
 /* Button */
@@ -1803,19 +1810,28 @@ input, select, textarea {
 /* Actions */
 
 	ul.actions {
-		list-style: none;
-		padding-left: 0;
+		  	margin: 0;
+  			padding: 0;
+  			list-style: none;
+  			display: flex;
+  			flex-wrap: wrap;
+  			justify-content: flex-start;
 	}
 
 		ul.actions li {
-			display: inline-block;
-			margin-left: 1em;
-			padding-left: 0;
+			margin: 0;
+ 			padding: 0;
 		}
 
-			ul.actions li:first-child {
-				margin-left: 0;
+			ul.actions a.button {
+  			width: 100%;
+  			box-sizing: border-box;
+  			text-align: center;
 			}
+
+				ul.actions li:first-child {
+				margin-left: 0;
+				}
 
 /* Links */
 
