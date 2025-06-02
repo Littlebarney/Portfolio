@@ -306,6 +306,13 @@ input, select, textarea {
 			box-sizing: border-box;
 		}
 
+		.portfolio .row {
+ 		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+  		gap: 2rem;
+		}
+
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
@@ -338,6 +345,26 @@ input, select, textarea {
 			order: -1;
 		}
 		
+		.col {
+  		flex: 0 0 100%;
+  		max-width: 100%;
+		}
+
+		/* Medium screens: 2 columns */
+		@media (min-width: 768px) {
+  			.col {
+    	flex: 0 0 calc(50% - 2rem);
+    	max-width: calc(50% - 2rem);
+  		}
+		}
+
+		/* Large screens: 3 columns */
+		@media (min-width: 1024px) {
+  			.col {
+    	flex: 0 0 calc(33.333% - 2rem);
+    	max-width: calc(33.333% - 2rem);
+  		}
+		}
 
 		.row > .col-1 {
 			width: 8.33333%;
@@ -370,6 +397,8 @@ input, select, textarea {
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: column;
+			flex: 0 0 calc(33.333% - 2rem); /* subtract gap if needed */
+  			max-width: calc(33.333% - 2rem);
 		  }
 		  
 		.row > .off-4 {
@@ -439,6 +468,24 @@ input, select, textarea {
 		.row > .off-12 {
 			margin-left: 100%;
 		}
+
+  		.columns-container {
+    	display: flex;
+    	flex-wrap: wrap;
+   		justify-content: center;
+    	gap: 20px;
+    	padding: 20px;
+		}
+
+		.column {
+  		background-color: #ccc;
+    	padding: 20px;
+    	flex: 1 1 300px;
+    	max-width: 300px;
+    	box-sizing: border-box;
+    	text-align: center;
+		}
+
 
 		.row.gtr-0 {
 			margin-top: 0px;
