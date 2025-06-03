@@ -212,6 +212,16 @@ input, select, textarea {
 		border: 3px solid black;
 		box-sizing: border-box;
 	}
+	.csharpinitialtext-box {
+  		background-color: rgb(2, 17, 33);
+		padding-top: 20px;
+		padding-bottom: 2px;
+		width: 60%;
+ 	 	margin: 20px auto;
+  		border-radius: 10px;
+		border: 3px solid black;
+		box-sizing: border-box;
+	}
 
 	.text-box {
   		background-color: rgb(189, 189, 189);
@@ -242,6 +252,17 @@ input, select, textarea {
 		padding-bottom: 2px;
 		width: 40%;
  		margin: 20px auto;
+  		border-radius: 10px;
+		border: 3px solid black;
+		box-sizing: border-box;
+	}
+
+		.csharptext-box {
+		background-color: rgb(113, 0, 0);
+		padding-top: 20px;
+		padding-bottom: 2px;
+		width: 60%;
+ 	 	margin: 20px auto;
   		border-radius: 10px;
 		border: 3px solid black;
 		box-sizing: border-box;
@@ -1622,6 +1643,15 @@ input, select, textarea {
 
 		._2dgamescreation {
 			background-color: rgb(48.2, 36.9, 41.2);
+			padding: 40px 20px;
+			min-height: 100vh;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.csharp {
+			background-color: rgb(253, 10, 10);
 			padding: 40px 20px;
 			min-height: 100vh;
 			display: block;
