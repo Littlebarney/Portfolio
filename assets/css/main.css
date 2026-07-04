@@ -1702,6 +1702,12 @@ input, select, textarea {
   }
   
   /* Featured image inside the box */
+  .box {
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+       }  
+
   .box .image.featured {
 	position: relative;
 	display: block;
@@ -1719,14 +1725,14 @@ input, select, textarea {
   
   /* Footer actions */
   .box footer ul.actions {
-	margin: 0;
+	margin-top: auto;
 	padding: 0;
 	list-style: none;
   }
   
   /* Make sure the box content grows to fill height */
   .box > * {
-	flex-shrink: 0;
+	flex-grow: 1;
 	transition: transform 0.2s ease, box-shadow 0.2s;
   }
   
@@ -1877,6 +1883,7 @@ input, select, textarea {
 			float: left;
 			margin: 0 2em 2em 0;
 		}
+
 
 /* List */
 
@@ -2645,7 +2652,7 @@ input, select, textarea {
 		/* Box */
 
 			.box footer ul.actions li {
-				margin: 1em 0 0 0;
+				margin-top: auto;
 				display: block;
 			}
 
